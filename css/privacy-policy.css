@@ -1,0 +1,77 @@
+/* Mobile: até 600px */
+@media (max-width: 600px) {
+ 
+
+  .policy-section {
+    max-width: 800px;
+    margin: 0rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .policy-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+    text-align: center;
+  }
+
+  .policy-updated {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+
+  .policy-content h2 {
+    font-size: 1.3rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+    color: #0077ff;
+  }
+
+  .policy-content p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .policy-content a {
+    color: #0077ff;
+    text-decoration: none;
+  }
+
+  .policy-content a:hover {
+    text-decoration: underline;
+  }
+
+  .policy-back {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .policy-back a {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border-radius: 8px;
+    background: #fcce0b;
+    color: #1f1f1f;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .policy-back a:hover {
+    background: #dbb50b;
+  }
+}
+/* Tablet: 601px até 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Desktop: acima de 1024px */
+@media (min-width: 1025px) {
+}
