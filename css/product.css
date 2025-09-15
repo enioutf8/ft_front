@@ -443,7 +443,7 @@
 
   .thumbnail-photo {
     cursor: pointer;
-    border: 4px solid transparent;
+    border: 2px solid transparent;
     border-radius: 4px;
     transition: border 0.3s;
   }
