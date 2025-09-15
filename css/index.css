@@ -337,6 +337,7 @@ body {
   .text-home-brothers {
     display: block;
     text-align: justify !important;
+    background-color: #fff !important;
   }
   .product-article {
     margin-bottom: 10px;

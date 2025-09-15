@@ -1,0 +1,79 @@
+/* Mobile: até 600px */
+@media (max-width: 600px) {
+  /* ===== Seção do formulário ===== */
+  .area-product-order {
+    display: flex;
+  }
+  .area-img-order {
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+  }
+  .area-img-order img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .quantity-control button {
+    padding: 5px 12px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: background 0.2s;
+  }
+
+  .quantity-control input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .area-price-qtd-order {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .close-order {
+    width: 100%;
+    height: max-content;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    border: 5px solid #e5e5e5;
+    padding: 10px;
+  }
+  .area-order-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .area-order-close span {
+    font-weight: 600;
+  }
+  .text-remove {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+  }
+}
+/* Tablet: 601px até 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Desktop: acima de 1024px */
+@media (min-width: 1025px) {
+}

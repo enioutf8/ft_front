@@ -456,6 +456,12 @@
   .thumbnail-item-color.active {
     border-color: #1e1e1e !important;
   }
+  .area-price-whats-product {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
   /* Tablet: 601px até 1024px */
   @media (min-width: 601px) and (max-width: 1024px) {
   }
