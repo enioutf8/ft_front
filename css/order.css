@@ -53,7 +53,7 @@
     background-color: #fff;
     position: fixed;
     bottom: 0;
-    border: 5px solid #e5e5e5;
+    border-top: 5px solid #e5e5e5;
     padding: 10px;
   }
   .area-order-close {
