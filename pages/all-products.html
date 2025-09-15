@@ -9,19 +9,19 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="css/index.css"
+      href="../css/index.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="css/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+      href="../css/all-products.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="css/animations/anime.css"
+      href="../css/bootstrap-5.3.8-dist/css/bootstrap.min.css"
     />
   </head>
   <body>
@@ -54,18 +54,18 @@
           <li class="nav-item logo">
             <a
               class="nav-link-custom nav-logo"
-              href="index.html"
+              href="../index.html"
               aria-label="Página inicial"
             >
               <img
                 class="nav-logo-img"
-                src="./imgs/logo_squire.png"
+                src="../imgs/logo_squire.png"
                 alt="Logo da empresa"
               />
             </a>
           </li>
           <li class="nav-item icon">
-            <a class="nav-link-custom" href="pages/login.html">
+            <a class="nav-link-custom" href="../pages/login.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -85,7 +85,7 @@
       &nbsp;
       <form
         class="search-form"
-        action="./pages/all-products.html"
+        action="/search"
         method="get"
         aria-label="Search Form"
       >
@@ -94,6 +94,7 @@
           type="search"
           name="query"
           placeholder="Buscar..."
+          required
         />
         <button class="search-button icon bg-company-yellow" type="submit">
           <svg
@@ -111,90 +112,17 @@
         </button>
       </form>
     </header>
-    <section aria-label="Carrossel de imagens">
-      <div
-        id="carouselExampleIndicators"
-        data-bs-interval="3000"
-        data-bs-ride="carousel"
-        class="carousel slide"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item bg-warning active">
-            <div class="carousel-item-custom">A</div>
-          </div>
-          <div class="carousel-item bg-dark">
-            <div class="carousel-item-custom">B</div>
-          </div>
-          <div class="carousel-item bg-secondary">
-            <div class="carousel-item-custom">C</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    &nbsp;
-    <section
-      class="categories container"
-      aria-labelledby="categorias-fechaduras"
-    >
-      <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Com senha</div>
-      </div>
-      <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Com Biometria</div>
-      </div>
-      <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Com Câmera</div>
-      </div>
-      <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Com Sobrepor</div>
-      </div>
-      <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Tradicional</div>
-      </div>
-      <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Segredo</div>
-      </div>
-    </section>
-    &nbsp;
-    <section class="container animar-ao-scroll fade-in">
-      <div class="who-us"></div>
-    </section>
-    &nbsp;
+
     <section
       class="featured-products container"
       aria-label="Produtos em Destaque"
     >
-      <h3 class="featured-products-title">Fechaduras em Destaque</h3>
-      <br />
-      <ul class="product-list">
+      &nbsp;
+      <h3 class="featured-products-title">
+        Resultados: <i>Fechadura Digital</i>
+      </h3>
+      &nbsp;
+      <ul class="product-list-page-all">
         <li class="product-item">
           <article class="product-article">
             <a class="product-link" href="pages/product.html">
@@ -394,249 +322,6 @@
             </div>
           </article>
         </li>
-      </ul>
-    </section>
-    <br /><br />
-    <section
-      class="environment-carousel container"
-      aria-label="Carrossel de imagens por ambiente"
-    >
-      <h3 class="environment-carousel-title">Selecione pelo Ambiente</h3>
-      <br />
-      <ul class="environment-list">
-        <li class="environment-item produto animar-ao-scroll card">
-          <figure class="environment-figure">
-            <div class="environment-link">
-              <img
-                class="environment-image"
-                src="https://media.gazetadopovo.com.br/2023/03/15110823/TST-area-externa-1.jpg"
-                alt="Descrição da imagem 1"
-              />
-            </div>
-            <div class="card-body">
-              <figcaption class="environment-caption">
-                Fechaduras digitais para uso em áreas externas
-              </figcaption>
-            </div>
-          </figure>
-        </li>
-        <li class="environment-item produto animar-ao-scroll card">
-          <figure class="environment-figure">
-            <div class="environment-link">
-              <img
-                class="environment-image"
-                src="https://watermark.lovepik.com/photo/20211123/large/lovepik-business-office-indoor-environment-picture_500803329.jpg"
-                alt="Descrição da imagem 1"
-              />
-            </div>
-            <div class="card-body">
-              <figcaption class="environment-caption">
-                Fechaduras eletrônicas ideais para ambientes internos
-              </figcaption>
-            </div>
-          </figure>
-        </li>
-        <li class="environment-item produto animar-ao-scroll card">
-          <figure class="environment-figure">
-            <div class="environment-link">
-              <img
-                class="environment-image"
-                src="https://www.engepoli.com/wp-content/uploads/2024/08/conforto-ambiental-blog.png"
-                alt="Descrição da imagem 1"
-              />
-            </div>
-            <div class="card-body">
-              <figcaption class="environment-caption">
-                Fechaduras Eletrônicas para Proteger o Seu Negócio
-              </figcaption>
-            </div>
-          </figure>
-        </li>
-        <li class="environment-item produto animar-ao-scroll card">
-          <figure class="environment-figure">
-            <div class="environment-link">
-              <img
-                class="environment-image"
-                src="https://arquitetodebolso.com.br/wp-content/uploads/2024/03/71086_Depois-3-scaled.jpeg.webp"
-                alt="Descrição da imagem 1"
-              />
-            </div>
-            <div class="card-body">
-              <figcaption class="environment-caption">
-                Fechaduras Eletrônicas para Locais Confidenciais
-              </figcaption>
-            </div>
-          </figure>
-        </li>
-      </ul>
-    </section>
-    &nbsp;
-    <section
-      class="featured-products container"
-      aria-label="Produtos em Destaque"
-    >
-      <h3 class="featured-products-title">Exclusivo e sofisticado</h3>
-      <br />
-      <ul class="product-list">
-        <li class="product-item">
-          <article class="product-article">
-            <a class="product-link" href="pages/product.html">
-              <figure class="product-figure">
-                <div class="area-thumb-item-product">
-                  <img
-                    class="product-image"
-                    src="https://s2-techtudo.glbimg.com/9OsgZ6yBbL5gtNpwCNaFfRXZ1vg=/600x0/filters:quality(50)/https://i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/m/F/sHyKptR9uj5D8qHdlo8Q/19.jpg"
-                    alt="Fechadura digital Elsys ESF-DS4100V"
-                  />
-                </div>
-                <figcaption class="product-caption">
-                  Fechadura digital Elsys ESF-DS4100V
-                </figcaption>
-              </figure>
-            </a>
-            <span class="old-price">R$ 750,00</span>
-            <h4 class="product-price">R$ 499,00</h4>
-            <div class="area-price-whats">
-              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto1"
-                >Comprar</a
-              >
-              <a class="icon icon-whats-price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-whatsapp"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
-        </li>
-
-        <li class="product-item">
-          <article class="product-article">
-            <a class="product-link" href="pages/product.html">
-              <figure class="product-figure">
-                <div class="area-thumb-item-product">
-                  <img
-                    class="product-image"
-                    src="https://images.tcdn.com.br/img/img_prod/711193/fechadura_eletronica_control_id_idlock_biometria_1127_1_46d7d7e5d32a375d749dfb05e9af1a45.jpg"
-                    alt="Fechadura Eletrônica Control Id IDLOCK BIOMETRIA"
-                  />
-                </div>
-                <figcaption class="product-caption">
-                  Fechadura Eletrônica Control Id IDLOCK BIOMETRIA
-                </figcaption>
-              </figure>
-            </a>
-            <span class="old-price">R$ 750,00</span>
-            <h4 class="product-price">R$ 499,00</h4>
-            <div class="area-price-whats">
-              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto1"
-                >Comprar</a
-              >
-              <a class="icon icon-whats-price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-whatsapp"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
-        </li>
-
-        <li class="product-item">
-          <article class="product-article">
-            <a class="product-link" href="pages/product.html">
-              <figure class="product-figure">
-                <div class="area-thumb-item-product">
-                  <img
-                    class="product-image"
-                    src="https://lojapado.vteximg.com.br/arquivos/ids/155439-800-800/Fechadura-eletronica-digital-de-sobrepor-com-cartao-RFID-Pado_3.png?v=637213398236530000"
-                    alt="Fechadura Digital FDS-50"
-                  />
-                </div>
-                <figcaption class="product-caption">
-                  Fechadura Digital FDS-50
-                </figcaption>
-              </figure>
-            </a>
-            <span class="old-price">R$ 750,00</span>
-            <h4 class="product-price">R$ 499,00</h4>
-            <div class="area-price-whats">
-              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto1"
-                >Comprar</a
-              >
-              <a class="icon icon-whats-price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-whatsapp"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
-        </li>
-
-        <li class="product-item">
-          <article class="product-article">
-            <a class="product-link" href="pages/product.html">
-              <figure class="product-figure">
-                <div class="area-thumb-item-product">
-                  <img
-                    class="product-image"
-                    src="https://s2-techtudo.glbimg.com/s1SpaXnmf3IHxoXi5zz5xGfZ0HU=/600x0/filters:quality(50)/https://i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/H/c/uAyrHuRrSHHqGuX9TQ6A/17.jpg"
-                    alt="Fechadura digital Elsys ESF-DS1100V"
-                  />
-                </div>
-                <figcaption class="product-caption">
-                  Fechadura digital Elsys ESF-DS1100V
-                </figcaption>
-              </figure>
-            </a>
-            <span class="old-price">R$ 750,00</span>
-            <h4 class="product-price">R$ 499,00</h4>
-            <div class="area-price-whats">
-              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto1"
-                >Comprar</a
-              >
-              <a class="icon icon-whats-price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-whatsapp"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-                  />
-                </svg>
-              </a>
-            </div>
-          </article>
-        </li>
 
         <li class="product-item">
           <article class="product-article">
@@ -677,8 +362,249 @@
             </div>
           </article>
         </li>
+
+        <li class="product-item">
+          <article class="product-article">
+            <a class="product-link" href="pages/product.html">
+              <figure class="product-figure">
+                <div class="area-thumb-item-product">
+                  <img
+                    class="product-image"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8SDxAPEA8SDxAOEBAQEBAPEQ8PEBAPFREWFhUVExUYHighGBolGxUWITEhJikrOi4uFx8zODUsOigtLjcBCgoKDQ0OGhAQGzcmHSUrLS02Ky0rKy0tLSsvNy03MS0rNTA1MjgtLS0tKzUtLTgtKy01LS0vLSswLS01LS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcECAECBgP/xABQEAACAgADAgYKDQoDCQEAAAAAAQIDBAUREiEGEzE0QVEHFSJhcXWBkbHRFCMyM0JSVHKTobKzwQgWJFNic4KUw9KStMIlNVZlhIWipMRD/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABwRAQEAAgIDAAAAAAAAAAAAAAABAjERIQNBgf/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8Bn3ZIUbbMPl+H9mWUycLb5zdWFrtXLBSSbskulRW7VbyU7KOczwmUYu+p7NrhGmpp6NTtmq9qPfSk35CkuFmZvCxpyzCa1xw8I1WThustukk5JNcm972t7k2tyW8Pc4vhZnrWsr8FhU3qtKejq1ts3+HQ+S4aYn4edqL6djDZTNa9727Uqr2Bfrq6JbT3ttwbfhepz7Fv/VNeGVfrAtaPDKfTwikv+35e/RYz7Q4Xy/4lX8WXYX+4qKWGv+I/8UPWfKUbly1y8ji/QwLso4TXtpw4RYaf7NuXRafhddm4nsPnGcQhx3E4LNKOmWX2zov06dmu1uMmlpu20zWyeN0ekk0+lSTRI8HeF2IwN6vw83CL99rT9rsj+1Dkk1p09b3rlA2j4P59h8bTx2Hm2oyddkJxcLabY+6rtg98ZLqZJlWZTwgr7e4W6mPFwzfDSpxUI67DxlMOMhPw7Pc69KZaYAAAAAAAAAAAAAAAAAAAAAAAAAAAeB7Na1yyuPx8dhI+ewpLN7o9sbLJtJK3EzTe5a7bS+pl29mjmGH8Y4P7bKIz6vaxaj0SvlF+B2aP6tQJKOYTmtqEO5fJKcuLUl1xSTenhSOs8RPpUfPJ/gj6SJLLcvwdkKpX4lVa3SjZHagnxcY7blLV6xTUZRTSfdTj1AQFmYSXwYvysxpZy/1a87PU15Dlux7djouyyuGihfhI8Vc1Nyi257L002dW0tY7m9pIj6ODWWyenbWDcZVqclLC1xltRqftanYpaaWvfo9nibNd7UQPNZhio2x0dSUvgz23qvJs7/OfXgzlFdspO2Tarkk6lu2k1qm5J8nLydRi4qtRsshGSnGFlkIzi1KM4xm1GSa5U0k9e+SnBaaV0l0yg/Klv9XnYHoex1c+Pyht6tZlOO/funhY6/XqbJmsnY9ftuVeNa/8vE2bAAAAAAAAAAAAAAAAAAAAAAAAAAADwHZp5hhvGWD+1Io7M+fR/fWell39mrmOE8ZYP0yKPzLn0P31npYGfYz44+mdc5V2RcJwezKL01i+rcfS5aprrTR1zjGO62y1x2XY09lPVLSKXL5AI6OX3XqxU0zt4uDlZsLXZhv87ej0S3vR6J6M4/OXGvf7I11io68Vh3rFOTXwP25efvIyctzOOHdlkqZ2uUdiucLuI4mxqSc1rXNSnsykk+WKlJre01ARW7weQIzcXg8RsLFW1yVeJnJxtaiozm3Jt6Lk1anpuSey9OQyuDPv7+ZI6W5sng4YONKilbG6c3ZKalZGEobUINe1txklLRtPYWijvPpwY9//AIJfgCcprsf++5V41q/y8DZw1h4Ae+5X41p+4ibPBQAAAAAAAAAAAAAAAAAAAAAAAAAAV72auZYPxng/TIo/Meew/e2ell39mt/oeC8aYT/UUfjn+mw/eT/ECQsMLEprlTWqUlqmtYyWsWu8000+lMz4zjGUZSgrIxknKuWqjNJ74y036Pk3HXhLmfsm+V/FqtyhVFxUnJbUKowbTfQ9nk6EEYODsxEq766qPZFca3KxSg7I0p6+2LT3MuXRvqINE7kudrCu7WuVqtUU4KxQqnsqa2L4uEuMrfGa7K2d8Vv6oGK0SXLoiTGTue2ccJLbJt9HVJRjNxajNyjGTTUZOGztJPp02o6+ElODHv8A/BL8Dvj89VmCownE7Lo4tKbnGUIqHGauqGynCVjs1m3J6uK8nTgvzj+CXpRWol+AHvuV+NaPuUbPmr/AF+25X41w/wB0bQBQAAAAAAAAAAAAAAAAAAAAAAAAAAV32bH+iYHxphP9ZR2Mf6ZX8+X4l39m7mmA8aYX0TKOxT/TKvnS9DAk1XKUlCKcpTajGK3tyb0SS6zCzLD2VTlXZCVc46bUJpxktUmtU+tNPymVNQbSnHbg2tuKey5Q17qKl0NrVa9GpiZripW22Wy02rZym0tyjq90Y9UUtEl1JAYFWCut23VVO1VQdlnFxlLYh1y05OR+Z9RhonuDvCB4T2QlVxvHRjySUdNiNkdJ6xl3D416uOzLuVpJasgIrRJdS0Cdsm3AXRqhfKqcabW412yhJVzktd0ZeR+HR9TJDgtzlfNfpR1xeeTswdWEcY+1yjt26JTsqri1h63ovcw27N71b2l8U7cFecr5r+1EE5SfAL37LV1ZrhvujaI1f4CL9Jy5f82wv2JL8DaAKAAAAAAAAAAAAAAAAAAAAAAAAAACuezdzTL/ABrhV9U/UUbiud1+GX4l5dm7mmX+NsJ9mwo3Fc7r8MvQwM65kditdE9GlLVptNKSTabT6Vqmt3SmuglKr1CyE5VwujF6yqsTcJx5HF6cm57n0PR9Bh59mU77NuSUIwiqqaoe90UR12Kod5J8vS230gYWBjc1c6qZ2qNbla4Vzmqq9/dycfcrl3vq7xhImcgzxYZT1qdj4yu+pqarUboV3Vx4zuXtw0vk9FpvS372Qiju072hOJO2r5M8pMbqa+smzBXRrjdKm2NVj0hbKuca57te5m1o/ISHBXnK+a/tRJTOeGksRgIYJ4dQko0QnarNqDjTo4uuvZSg2117lu5OSL4Lc5XzX6Ymrw5423aX4Ec6y/xvhvRM2fNYOBXO8B43w39Q2fI0AAAAAAAAAAAAAAAAAAAAAAAAAACuezfzXLvG2E+zaUbiedQ8pePZv5rl3jfCfYtKRthriE/irXztL8QPteyMxLJC9mHVdCNilNNxSe5Qot3vk7m2Lj9QGG6Z7HGbE+L5OM2JcXrrp7vTTl3cpzCicq5WqOtcZKEpppqMnppr09K39b0PUU5/TxE404i3D4iyUVZbiVOzWtbW6qVEW46dwlBxUUtd0tNSKzbMpSqrr9lyxMtq52SSuhHi5Kni4S4yMXLRxsfJotrvgRBL8Fucr5r+1EhyX4Lc5XzX6YgS/ArneA8b4X+obQGr/ArneA8b4X+obQAAAAAAAAAAAAAAAAAAAAAAAAAAABXHZv5tlvjfCfYtKZiu7ufVCv76BcfZ1sUcJl0nyRzbDSfgVdrKRwOMUo4iyTUUkl3lFX1pekDveyLxEjJuxlb5LI+cwLMRHon5pMBqNTo718b62x7IXx//ACYHfUmOCvOY/Nf2okI749MtfC2yX4J2R9lRSa1cX5d6f4MCZ4Ec6y/xthP6htEaucBucZc+vNsH6Jm0YAAAAAAAAAAAAAAAAAAAAAAAAAAAVd+UH/u/B+MavubihsLzXFfN/wDopL5/KC/3fg/GNX3FxQ+Bjrh8SuvRf+xQBCneNcnyRb17x6PAYdapRWnVoSUsxtg9lt7gIaPBDF8k3h6ns7SVmLwkZNeDb3PvMisZl9tUtmcVq+RwnC2L/ig2j1TzmZ1eczA8hxUvivzMmOCXc4uuUu4ilPupdyvcvpZKvOJnHbaYGbwIsUbsu2mo7OZ4SUtpqOzFKWsnryLfymzXbfC/Kafpa/WarvNJd469sX1LzAbVdtsL8pp+lr9Zz22wvymn6Wv1mqfs99S8xx7NfUvMBtb22wvymn6Wv1jtrhvlFP0tfrNUvZXeXmOOOT+CvMgNr+2mG+UU/S1+sdtMN8op+lr9Zqgtl/BXmRJ5Tha3Jawi/wCFAbSV3Rl7mUZfNafoO5r7VTCLUoxjGS5JRioyXga3otXscZtbfh7IWzdkqLFFSk9ZuuUU1tPp37S1e/dvA9aAAAAAAAAAAAAAAACrvyguYYPxjV9xcURl3vV/zl/mKC9vyguYYPxhX9xcUPg3pRiX8Xf5r6AJjIkuNjryanXP2lfYo8mpg4LHxi9pP1n0lJ2Sc38JgYr1GyzNjhzusOBH7LOdlkhxCOVQgI7YZzsMkeIQ4lAR+wznYZI8ShxKAwFBnZQZnqpHKqQGJCDJnJ/dIxI1xM3CWRi1vA9C3uPd9iTlxv8A0/8AVK6hi4bltJN8ibSbfeLY7GmVWU4e2y2DrliJxcYzTjPi4x0TlF7473LcwPYgAAAAAAAAAAAAAAAq38oLmOC8YV/cWmvsrnGpxX/6ynGXfSlCXpijYP8AKCX6Bg31ZhX9dFxrvenrGP7c9PLLT8AMZNrk1X1H09k2frJ/4pEvLB1y5Y+bcde1tX7XnAycNwzxMI7LpwVv7VuAwc5+fY3+Ujcxzq+6SlKUIaa6Roqqw8Em9fc1pJ+Uye1dXXLzr1HKyyr9rzr1ARXsu39ZP/FIn+CEJ2XN2NzrUdNJtyjttpLc+nlPhDLqV8FvwtkvgLlDZUUopPcluQH34GQjOzLtuKnt5pha57aUtutx3xlryxfUbJ/m5gPkOF/l6f7TXfgpRs4rAwW5LO6Nn5mwmvqlp5DZwCL/ADcwHyHC/wAvT/ac/m5gPkOF/l6f7STAEZ+buA+RYX+Xp/tH5vYD5Fhv5en+0kwBG/m/gfkWG+gp9Rz2gwPyPDfQU+okQBi4XLqKt9VFVTfK664Q9CMoAAAAAAAAAAAAAAAAADwfZsy6V2TXShHalhbKsTppq9iEtJteCMpPwJmtssM5XQlHenKO5b317kuXU3MsgpJxklKMk1JNapp7mmulFP5n2J7cNjasZlyrxNNVyuWCvsdMoyjLaUYW6NOKemikujTVgVHpva13rc10p99HbYZeWJzfEPdi+DuLsklv2YYPHR8ktd5D2YzLG+74MYxPp/2PXy+GLAqXYZzsMuHC4fLLI7UeDeKST07rLVB6+By758LLcqi2nwaxjcW0/wDZO0tV1PXRgVLs+Qk8hybE4qxQwtMrm3o5RXtcN/LOz3MV4fJq9xaeAzLDL3jgxjI9/tbhKV55NExDMM7uShhcrhgYvRK7ML4NQXWsPVv106GwPN4fgxCnOcnwVc422YamzHY6S10UltRhPTo1nNRS6oxLhPPcEeC0cErbJ2yxWMxclPFYuxJTtmluUUvcQXIorkPQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k="
+                    alt="Fechadura Eletrônica Slim Touch"
+                  />
+                </div>
+                <figcaption class="product-caption">
+                  Fechadura Eletrônica Slim Touch
+                </figcaption>
+              </figure>
+            </a>
+            <span class="old-price">R$ 890,00</span>
+            <h4 class="product-price">R$ 629,00</h4>
+            <div class="area-price-whats">
+              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto2"
+                >Comprar</a
+              >
+              <a class="icon icon-whats-price">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+
+        <li class="product-item">
+          <article class="product-article">
+            <a class="product-link" href="pages/product.html">
+              <figure class="product-figure">
+                <div class="area-thumb-item-product">
+                  <img
+                    class="product-image"
+                    src="data:image/jpeg;base64,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"
+                    alt="Fechadura Eletrônica Premium"
+                  />
+                </div>
+                <figcaption class="product-caption">
+                  Fechadura Eletrônica Premium
+                </figcaption>
+              </figure>
+            </a>
+            <span class="old-price">R$ 1.200,00</span>
+            <h4 class="product-price">R$ 899,00</h4>
+            <div class="area-price-whats">
+              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto3"
+                >Comprar</a
+              >
+              <a class="icon icon-whats-price">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+
+        <li class="product-item">
+          <article class="product-article">
+            <a class="product-link" href="pages/product.html">
+              <figure class="product-figure">
+                <div class="area-thumb-item-product">
+                  <img
+                    class="product-image"
+                    src="data:image/jpeg;base64,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"
+                    alt="Fechadura Eletrônica Smart Connect"
+                  />
+                </div>
+                <figcaption class="product-caption">
+                  Fechadura Eletrônica Smart Connect
+                </figcaption>
+              </figure>
+            </a>
+            <span class="old-price">R$ 1.050,00</span>
+            <h4 class="product-price">R$ 799,00</h4>
+            <div class="area-price-whats">
+              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto4"
+                >Comprar</a
+              >
+              <a class="icon icon-whats-price">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+
+        <li class="product-item">
+          <article class="product-article">
+            <a class="product-link" href="pages/product.html">
+              <figure class="product-figure">
+                <div class="area-thumb-item-product">
+                  <img
+                    class="product-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWV734sE6WUFCQw8JgtO_1HJ4hK4KEwk5bw&s"
+                    alt="Fechadura Eletrônica Vision"
+                  />
+                </div>
+                <figcaption class="product-caption">
+                  Fechadura Eletrônica Vision
+                </figcaption>
+              </figure>
+            </a>
+            <span class="old-price">R$ 1.300,00</span>
+            <h4 class="product-price">R$ 949,00</h4>
+            <div class="area-price-whats">
+              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto5"
+                >Comprar</a
+              >
+              <a class="icon icon-whats-price">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+
+        <li class="product-item">
+          <article class="product-article">
+            <a class="product-link" href="pages/product.html">
+              <figure class="product-figure">
+                <div class="area-thumb-item-product">
+                  <img
+                    class="product-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkeB5ci1O2agdONaWDJ_MqwC5eWR-71zA7tA&s"
+                    alt="Fechadura Eletrônica Secure Max"
+                  />
+                </div>
+                <figcaption class="product-caption">
+                  Fechadura Eletrônica Secure Max
+                </figcaption>
+              </figure>
+            </a>
+            <span class="old-price">R$ 980,00</span>
+            <h4 class="product-price">R$ 699,00</h4>
+            <div class="area-price-whats">
+              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto6"
+                >Comprar</a
+              >
+              <a class="icon icon-whats-price">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+
+        <li class="product-item">
+          <article class="product-article">
+            <a class="product-link" href="pages/product.html">
+              <figure class="product-figure">
+                <div class="area-thumb-item-product">
+                  <img
+                    class="product-image"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsG0Qp1IRURXWS2IfXZLKowO-Gcg9VdyZanw&s"
+                    alt="Fechadura Eletrônica UltraLock"
+                  />
+                </div>
+                <figcaption class="product-caption">
+                  Fechadura Eletrônica UltraLock
+                </figcaption>
+              </figure>
+            </a>
+            <span class="old-price">R$ 1.500,00</span>
+            <h4 class="product-price">R$ 1.099,00</h4>
+            <div class="area-price-whats">
+              <a class="btn-buy btn bg-company-yellow" href="#comprar-produto7"
+                >Comprar</a
+              >
+              <a class="icon icon-whats-price">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
       </ul>
     </section>
+
     &nbsp;
     <div
       id="carrosselFooter"
@@ -702,66 +628,6 @@
       </div>
     </div>
     &nbsp;
-    <section class="container">
-      &nbsp;
-      <h3 class="featured-products-title">Explore por Marca</h3>
-      &nbsp;
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <div class="brand">
-            <img
-              src="https://site.elsys.com.br/hubfs/Identidade%20Visual/LOGO-ELSYS-2020_colorido_RGB-web.png"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Intelbras_wordmark.svg/2560px-Intelbras_wordmark.svg.png"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://images.seeklogo.com/logo-png/44/2/tuya-logo-png_seeklogo-440157.png"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://ae01.alicdn.com/kf/S8e841ac26e9e4faabc6ca8a7bd1cd3c0Z.jpg"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP50a1zHy6wnPEu4oHdGGRdCmVswDhkMBLAA&s"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://site.elsys.com.br/hubfs/Identidade%20Visual/LOGO-ELSYS-2020_colorido_RGB-web.png"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Intelbras_wordmark.svg/2560px-Intelbras_wordmark.svg.png"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://images.seeklogo.com/logo-png/44/2/tuya-logo-png_seeklogo-440157.png"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://ae01.alicdn.com/kf/S8e841ac26e9e4faabc6ca8a7bd1cd3c0Z.jpg"
-            />
-          </div>
-          <div class="brand">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP50a1zHy6wnPEu4oHdGGRdCmVswDhkMBLAA&s"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    &nbsp;
     <div class="line-overfooter bg-company-yellow"></div>
     <footer
       class="footer bg-dark text-white container"
@@ -771,12 +637,12 @@
         <figure class="figure-logo-footer logo">
           <a
             class="nav-link-custom nav-logo"
-            href="index.html"
+            href="../index.html"
             aria-label="Página inicial"
           >
             <img
               class="nav-logo-img"
-              src="./imgs/logo_footer.png"
+              src="../imgs/logo_footer.png"
               alt="Logo da empresa"
             />
           </a>
@@ -942,133 +808,16 @@
       <section class="footer-section footer-legal">
         <p>&copy; 2025 Fecha tudo. Todos os direitos reservados.</p>
         <p>
-          <a class="footer-legal-link" href="pages/terms-of-use.html"
+          <a class="footer-legal-link" href="../pages/terms-of-use.html"
             >Termos de Uso</a
           >
           |
-          <a class="footer-legal-link" href="pages/privacy-policy.html"
+          <a class="footer-legal-link" href="../pages/privacy-policy.html"
             >Política de Privacidade</a
           >
         </p>
       </section>
     </footer>
-
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasLeftMenu"
-      aria-labelledby="offcanvasLeftMenuLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLeftMenuLabel">Menu</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <hr />
-      <div class="offcanvas-body">
-        <div
-          id="carouselExampleMobile"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div
-              class="carousel-item carousel-item-mobile active"
-              data-bs-interval="5000"
-            >
-              <div class="item-carrocel-officanvas">
-                <div class="carrossel-mobile-off bg-secondary"></div>
-              </div>
-            </div>
-            <div
-              class="carousel-item carousel-item-mobile"
-              data-bs-interval="5000"
-            >
-              <div class="item-carrocel-officanvas">
-                <div class="carrossel-mobile-off bg-danger"></div>
-              </div>
-            </div>
-            <div
-              class="carousel-item carousel-item-mobile"
-              data-bs-interval="5000"
-            >
-              <div class="item-carrocel-officanvas">
-                <div class="carrossel-mobile-off bg-primary"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        &nbsp;
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-dark active" href="#">Início</a>
-          </li>
-
-          <!-- Produtos -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-dark"
-              href="#"
-              id="produtosDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Produtos
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">Fechaduras Biométricas</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Fechaduras com Senha</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Fechaduras com Cartão</a>
-              </li>
-              <li><a class="dropdown-item" href="#">Fechaduras Wi-Fi</a></li>
-            </ul>
-          </li>
-
-          <!-- Serviços -->
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-dark"
-              href="#"
-              id="servicosDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Serviços
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#">Instalação de Fechaduras</a>
-              </li>
-              <li><a class="dropdown-item" href="#">Manutenção</a></li>
-              <li><a class="dropdown-item" href="#">Suporte Técnico</a></li>
-            </ul>
-          </li>
-
-          <!-- Outros -->
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Aréa de atendimento</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Sobre Nós</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
     <div class="area-btn-whatsapp flex-position-center">
       <div class="btn-whatsapp-back flex-position-center pointer pulse"></div>
       <div class="btn-whatsapp flex-position-center pointer">
@@ -1086,8 +835,6 @@
         </svg>
       </div>
     </div>
-
-    <script src="js/api/animations/anime.js" defer></script>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

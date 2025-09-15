@@ -94,7 +94,7 @@
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 2px solid rgb(205, 205, 205);
     transition: border 0.3s;
     display: inline-block;
   }

@@ -361,6 +361,10 @@ body {
     width: 100%;
     object-fit: cover;
   }
+  .carrossel-mobile-off {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /* Tablet: 601px até 1024px */

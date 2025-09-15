@@ -1,0 +1,14 @@
+.product-list-page-all {
+  display: flex;
+  flex-wrap: wrap; /* permite quebra de linha */
+  gap: 10px;
+}
+
+.product-list-page-all .product-item {
+  flex: 0 0 calc(51% - 10px); /* 2 itens por linha */
+  min-height: 200px;
+  max-height: max-content;
+  background-color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+}
