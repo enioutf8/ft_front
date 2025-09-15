@@ -44,9 +44,6 @@
     border-radius: 10px;
     overflow: hidden;
   }
-  .thumbnail-item:hover {
-    border: 2px solid #3b3b3b;
-  }
 
   .thumbnail-photo {
     max-width: 100%;
@@ -95,9 +92,10 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-  }
-  .thumbnail-item-color:hover {
-    border: 2px solid #3b3b3b;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    display: inline-block;
   }
 
   .env-options {
@@ -442,11 +440,26 @@
     vertical-align: middle;
     box-shadow: 0 2px 6px rgba(255, 212, 64, 0.18);
   }
-}
-/* Tablet: 601px até 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
-}
 
-/* Desktop: acima de 1024px */
-@media (min-width: 1025px) {
+  .thumbnail-photo {
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-radius: 4px;
+    transition: border 0.3s;
+  }
+
+  .thumbnail-photo.active {
+    border-color: #1e1e1e;
+  }
+
+  .thumbnail-item-color.active {
+    border-color: #1e1e1e !important;
+  }
+  /* Tablet: 601px até 1024px */
+  @media (min-width: 601px) and (max-width: 1024px) {
+  }
+
+  /* Desktop: acima de 1024px */
+  @media (min-width: 1025px) {
+  }
 }
