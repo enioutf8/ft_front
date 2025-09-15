@@ -348,12 +348,18 @@ body {
     flex: 0 0 auto;
     width: 150px;
     height: 150px;
-    background: #eee;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     user-select: none;
     border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .brand img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
