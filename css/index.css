@@ -332,6 +332,29 @@ body {
   .product-article {
     margin-bottom: 10px;
   }
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    cursor: grab;
+    margin-top: 20px;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    border-radius: 50%;
+  }
 }
 
 /* Tablet: 601px até 1024px */
