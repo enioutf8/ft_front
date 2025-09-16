@@ -13,14 +13,14 @@ function getActiveIndex() {
 let lastIndex = -1;
 function updateImage() {
   const index = getActiveIndex();
-  if(index !== lastIndex) {
+  if (index !== lastIndex) {
     lastIndex = index;
     const activeText = texts[index] || texts[0];
     carouselImage.classList.add("fade-out");
     setTimeout(() => {
       carouselImage.src = activeText.dataset.img;
       carouselImage.classList.remove("fade-out");
-    }, 200);
+    }, 100);
   }
 }
 
@@ -28,3 +28,27 @@ function updateImage() {
 carouselTexts.addEventListener("scroll", () => {
   updateImage();
 });
+
+ 
+// ===== NOVO: autoplay com loop =====
+let autoPlayIndex = 0;
+const itemWidth = texts[0].offsetWidth + 10; // mesmo cálculo do scroll
+
+setInterval(() => {
+  autoPlayIndex++;
+
+  if (autoPlayIndex >= texts.length) {
+    autoPlayIndex = 0; // volta para o primeiro
+    // PULA direto para o início, sem animar o caminho de volta
+    carouselTexts.scrollLeft = 0;
+  } else {
+    // faz scroll suave normalmente
+    carouselTexts.scrollTo({
+      left: autoPlayIndex * itemWidth,
+      behavior: "smooth"
+    });
+  }
+
+  updateImage();
+}, 13000); // muda a cada 3 segundos
+
