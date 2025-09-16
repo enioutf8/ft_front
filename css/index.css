@@ -478,7 +478,7 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px !important;
+    height: 550px !important;
     color: white;
   }
   /* CATEGORIES */
@@ -663,14 +663,14 @@ ol {
     scroll-snap-type: x mandatory;
     -ms-overflow-style: none; /* IE e Edge antigo */
     scrollbar-width: none; /* Firefox */
-    height: 315px;
+    height: 360px;
   }
   .environment-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 250px !important;
-    height: 300px !important;
+    height: 350px !important;
     font-weight: 500 !important;
 
     flex: 0 0 calc(80% - 10px); /* sempre 2 itens por vez */
@@ -678,7 +678,7 @@ ol {
   }
   .environment-link {
     width: 100% !important;
-    height: 220px;
+    height: 260px;
     background-color: gray;
     display: flex;
     justify-content: center;
