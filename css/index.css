@@ -20,55 +20,55 @@ body {
   -webkit-user-drag: none;
 }
 
+.area-btn-whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  right: 8%;
+  width: 70px;
+  height: 70px;
+}
+
+.btn-whatsapp {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-whatsapp svg {
+  width: 1.4em;
+  height: 1.4em;
+  color: #ffffff !important;
+}
+
+.btn-whatsapp-back {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+}
+.pulse {
+  animation: pulse 1.8s infinite;
+}
+ul,
+ol {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+
 /* Mobile: até 600px */
 @media (max-width: 600px) {
-  .area-btn-whatsapp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 5%;
-    right: 8%;
-    width: 70px;
-    height: 70px;
-  }
-
-  .btn-whatsapp {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #25d366;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btn-whatsapp svg {
-    width: 1.4em;
-    height: 1.4em;
-    color: #ffffff !important;
-  }
-
-  .btn-whatsapp-back {
-    position: absolute;
-    z-index: 2;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #25d366;
-  }
-  .pulse {
-    animation: pulse 1.8s infinite;
-  }
-  ul,
-  ol {
-    padding: 0 !important;
-    margin: 0 !important;
-    list-style: none;
-  }
-
   header {
     width: 100%;
     padding-top: 4%;
@@ -422,6 +422,119 @@ body {
 
 /* Tablet: 601px até 1024px */
 @media (min-width: 601px) and (max-width: 1024px) {
+  /* HEADER */
+  header {
+    width: 100% !important;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #ffffff;
+  }
+  header nav .nav-list .nav-item {
+    list-style: none;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon svg {
+    width: 1.4em;
+    height: 1.4em;
+    color: #262626 !important;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  .search-form {
+    display: flex;
+  }
+  .search-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+  }
+  .search-button svg {
+    width: 1.2em !important;
+    height: 1.2em !important;
+    color: black !important;
+  }
+  /* FOOTER */
+
+  .line-overfooter {
+    width: 100%;
+    height: 5px;
+  }
+  footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .figure-logo-footer {
+    margin: 0 auto;
+  }
+  .footer-list {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-list li a {
+    text-decoration: none !important;
+    color: #ffffff !important;
+  }
+  .form-input {
+    margin-bottom: 5px;
+  }
+  .form-button-footer,
+  .btn-order-footer {
+    width: 100%;
+    font-weight: bold !important;
+    color: #000 !important;
+  }
+  .footer-address a {
+    text-decoration: none !important;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-social-link svg {
+    color: #ffffff !important;
+  }
+  .footer-legal {
+    text-align: center;
+  }
+  .footer-legal a {
+    text-align: center;
+    color: #cbcbcb !important;
+  }
+  .footer-legal a:hover {
+    text-align: center;
+    color: #ffffff !important;
+  }
+  .featured-products-title,
+  .environment-carousel-title,
+  .footer-title {
+    text-align: center;
+  }
 }
 
 /* Desktop: acima de 1024px */
