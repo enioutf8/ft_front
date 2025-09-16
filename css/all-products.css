@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap; /* permite quebra de linha */
   gap: 10px;
+   
 }
 
 .product-list-page-all .product-item {
