@@ -29,7 +29,6 @@ carouselTexts.addEventListener("scroll", () => {
   updateImage();
 });
 
- 
 // ===== NOVO: autoplay com loop =====
 let autoPlayIndex = 0;
 const itemWidth = texts[0].offsetWidth + 10; // mesmo cálculo do scroll
@@ -45,10 +44,9 @@ setInterval(() => {
     // faz scroll suave normalmente
     carouselTexts.scrollTo({
       left: autoPlayIndex * itemWidth,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   }
 
   updateImage();
 }, 13000); // muda a cada 3 segundos
-
