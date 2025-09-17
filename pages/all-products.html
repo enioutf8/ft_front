@@ -25,7 +25,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="hidden-lg">
       <nav class="nav-main container" aria-label="Menu principal">
         <ul class="nav-list">
           <li class="nav-item icon">
@@ -112,13 +112,153 @@
         </button>
       </form>
     </header>
+    <!-- HEADER LG-->
+    <header class="header-lg bg-white">
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+          <div class="area-logo-lg">
+            <a href="../index.html" aria-label="Página inicial">
+              <img
+                class="nav-logo-img"
+                src="../imgs/logo_large.png"
+                alt="Logo da empresa"
+              />
+            </a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Produtos -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="produtosDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Produtos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="produtosDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Fechaduras Biométricas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fechaduras com Senha</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fechaduras com Cartão</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Fechaduras Wi-Fi</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Serviços -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="servicosDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Serviços
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicosDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Instalação de Fechaduras</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Manutenção</a></li>
+                  <li><a class="dropdown-item" href="#">Suporte Técnico</a></li>
+                </ul>
+              </li>
+
+              <!-- Outros -->
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Atendimento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Contato</a>
+              </li>
+            </ul>
+
+            <form
+              class="d-flex"
+              role="search"
+              action="./pages/all-products.html"
+              method="get"
+            >
+              <input
+                name="q"
+                aria-label="Search Form"
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+              />
+              <button class="btn bg-company-yellow" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <div class="nav-item nav-item-lg icon">
+              <a class="nav-link-custom" href="pages/login.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="line-overfooter bg-company-yellow hidden-mobile"></div>
 
     <section
       class="featured-products container"
       aria-label="Produtos em Destaque"
     >
       &nbsp;
-      <h3 class="featured-products-title">
+      <h3 class="featured-products-title title-all-lg">
         Resultados: <i>Fechadura Digital</i>
       </h3>
       &nbsp;
@@ -629,7 +769,10 @@
     </div>
     &nbsp;
     <div class="line-overfooter bg-company-yellow"></div>
-    <footer class="footer bg-dark text-white" aria-label="Rodapé do site">
+    <footer
+      class="footer bg-dark text-white hidden-lg"
+      aria-label="Rodapé do site"
+    >
       <div class="container">
         <section class="footer-section">
           <figure class="figure-logo-footer logo">
@@ -660,39 +803,6 @@
             </li>
           </ul>
         </section>
-        <br />
-        <section class="footer-section footer-newsletter">
-          <h5 class="footer-title">Entre em contato</h5>
-          <form
-            class="footer-newsletter-form"
-            action="/enviar-email"
-            method="post"
-          >
-            <input
-              class="form-input form-control"
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Digite Seu nome"
-              required
-            />
-            <input
-              class="form-input form-control"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Digite seu e-mail"
-              required
-            />
-            <button
-              class="form-button-footer btn text-white bg-secondary"
-              type="submit"
-            >
-              CADASTRAR
-            </button>
-          </form>
-        </section>
-        <br />
         <hr />
         <section class="footer-section footer-newsletter">
           <h5 class="footer-title">Atendimento</h5>
@@ -815,6 +925,139 @@
             >
           </p>
         </section>
+      </div>
+    </footer>
+    <!-- FOOTER LG-->
+    <footer class="bg-dark hidden-mobile text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo -->
+          <div class="col-md-3 text-center text-md-start">
+            <div class="area-logo-lg">
+              <a href="index.html" aria-label="Página inicial">
+                <img
+                  class="nav-logo-img"
+                  src="../imgs/logo_footer_linear.png"
+                  alt="Logo da empresa"
+                />
+              </a>
+            </div>
+
+            <p class="small">
+              © 2025 Fecha tudo. <br />Todos os direitos reservados.
+            </p>
+            <ul class="footer-social">
+              <li class="footer-social-item icon">
+                <a
+                  class="footer-social-link"
+                  href="#"
+                  aria-label="Instagram da loja"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item icon">
+                <a
+                  class="footer-social-link"
+                  href="#"
+                  aria-label="LinkedIn da loja"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-2">
+            <h5 class="fw-bold mb-3">Institucional</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Início</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Produtos</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Sobre Nós</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Atendimento -->
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3">Atendimento</h5>
+            <p class="mb-1">08:00 ás 20:00 - Segunda a Sexta</p>
+            <p class="mb-1">09:00 ás 15:00 - Sábado</p>
+            <p class="mb-0">Horário de Brasília (exceto domingos e feriados)</p>
+          </div>
+
+          <!-- Loja Física -->
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Loja Física</h5>
+            <p class="mb-1">Rua Desembargador Régulo Tinoco, 1265</p>
+            <p class="mb-1">Barro Vermelho, Natal - RN, 59160-155</p>
+            <p class="mb-1">contato@lojaexemplo.com</p>
+            <p class="mb-0">(11) 99999-9999</p>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Contato -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h5 class="fw-bold mb-3">Entre em contato</h5>
+            <p class="mb-3">Cadastre seu nome e e-mail para falar conosco.</p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Digite seu e-mail"
+              />
+              <button class="btn bg-company-yellow" type="submit">
+                Cadastrar
+              </button>
+            </form>
+            <br />
+            <p class="text-white footer-legal">
+              <a class="footer-legal-link" href="../pages/terms-of-use.html"
+                >Termos de Uso</a
+              >
+              |
+              <a class="footer-legal-link" href="../pages/privacy-policy.html"
+                >Política de Privacidade</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="area-btn-whatsapp flex-position-center">

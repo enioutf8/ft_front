@@ -1045,17 +1045,17 @@ ol {
   .product-caption {
     color: #000;
     height: 60px;
-    font-size: 0.8em;
+    font-size: 1em !important;
     overflow: hidden;
   }
 
   .product-item {
-    flex: 0 0 calc(33.333% - 10px) !important; /* sempre 3 itens por vez */
+    flex: 0 0 calc(25% - 10px) !important; /* sempre 4 itens por vez */
     scroll-snap-align: start;
     min-height: 200px;
     max-height: max-content;
     background-color: #ffffff;
-    padding: 5px;
+    padding: 15px !important;
     text-decoration: none;
   }
 

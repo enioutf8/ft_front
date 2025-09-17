@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap; /* permite quebra de linha */
   gap: 10px;
-   
 }
 
 .product-list-page-all .product-item {
@@ -12,4 +11,12 @@
   background-color: #ffffff;
   padding: 5px;
   text-decoration: none;
+}
+
+.title-all-lg {
+  text-align: left !important;
+  font-size: 1.5em !important;
+}
+.title-all-lg i {
+  color: gray !important;
 }

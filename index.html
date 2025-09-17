@@ -201,12 +201,18 @@
               </li>
             </ul>
 
-            <form class="d-flex" role="search">
+            <form
+              class="d-flex"
+              role="search"
+              action="./pages/all-products.html"
+              method="get"
+            >
               <input
+                name="q"
+                aria-label="Search Form"
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar..."
-                aria-label="Search"
               />
               <button class="btn bg-company-yellow" type="submit">
                 <svg
@@ -223,6 +229,7 @@
                 </svg>
               </button>
             </form>
+
             <div class="nav-item nav-item-lg icon">
               <a class="nav-link-custom" href="pages/login.html">
                 <svg
