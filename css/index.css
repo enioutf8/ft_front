@@ -993,7 +993,7 @@ ol {
   .footer-social {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start !important;
   }
   .footer-social-link svg {
     color: #ffffff !important;
