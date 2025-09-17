@@ -16,7 +16,7 @@ body {
 }
 .form-control:focus {
   border-color: #212529 !important; /* cor dark */
-  box-shadow: 0 0 0 0.10rem rgba(33, 37, 41, 0.25) !important; /* sombra escura */
+  box-shadow: 0 0 0 0.1rem rgba(33, 37, 41, 0.25) !important; /* sombra escura */
 }
 
 .product-list,
@@ -72,7 +72,7 @@ ol {
   list-style: none;
 }
 
-.header-mobile {
+.hidden-lg {
   display: block;
 }
 
@@ -861,7 +861,7 @@ ol {
 /* Desktop: acima de 1024px */
 @media (min-width: 1025px) {
   /* HEADER */
-  .header-mobile {
+  .hidden-lg {
     display: none !important;
   }
   .header-lg {

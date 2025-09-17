@@ -25,7 +25,7 @@
     />
   </head>
   <body>
-    <header class="header-mobile">
+    <header class="hidden-lg">
       <nav class="container nav-main" aria-label="Menu principal">
         <ul class="nav-list">
           <li class="nav-item icon">
@@ -111,7 +111,7 @@
         </button>
       </form>
     </header>
-
+    <!-- HEADER LG-->
     <header class="header-lg bg-white">
       <nav class="navbar navbar-expand-lg container">
         <div class="container-fluid">
@@ -982,7 +982,10 @@
     </section>
     &nbsp;
     <div class="line-overfooter bg-company-yellow"></div>
-    <footer class="footer bg-dark text-white" aria-label="Rodapé do site">
+    <footer
+      class="footer bg-dark text-white hidden-lg"
+      aria-label="Rodapé do site"
+    >
       <div class="container">
         <section class="footer-section">
           <figure class="figure-logo-footer logo">
@@ -1021,14 +1024,6 @@
             action="/enviar-email"
             method="post"
           >
-            <input
-              class="form-input form-control"
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Digite Seu nome"
-              required
-            />
             <input
               class="form-input form-control"
               type="email"
@@ -1168,6 +1163,87 @@
             >
           </p>
         </section>
+      </div>
+    </footer>
+
+    <footer class="bg-dark hidden-mobile text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo -->
+          <div class="col-md-3 text-center text-md-start">
+            <div class="area-logo-lg">
+              <a href="index.html" aria-label="Página inicial">
+                <img
+                  class="nav-logo-img"
+                  src="./imgs/logo_footer_linear.png"
+                  alt="Logo da empresa"
+                />
+              </a>
+            </div>
+
+            <p class="small">
+              © 2025 Fecha tudo. <br />Todos os direitos reservados.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-2">
+            <h5 class="fw-bold mb-3">Institucional</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Início</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Produtos</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Sobre Nós</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Contato</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Atendimento -->
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-3">Atendimento</h5>
+            <p class="mb-1">08:00 ás 20:00 - Segunda a Sexta</p>
+            <p class="mb-1">09:00 ás 15:00 - Sábado</p>
+            <p class="mb-0">Horário de Brasília (exceto domingos e feriados)</p>
+          </div>
+
+          <!-- Loja Física -->
+          <div class="col-md-4">
+            <h5 class="fw-bold mb-3">Loja Física</h5>
+            <p class="mb-1">Rua Desembargador Régulo Tinoco, 1265</p>
+            <p class="mb-1">Barro Vermelho, Natal - RN, 59160-155</p>
+            <p class="mb-1">contato@lojaexemplo.com</p>
+            <p class="mb-0">(11) 99999-9999</p>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Contato -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h5 class="fw-bold mb-3">Entre em contato</h5>
+            <p class="mb-3">Cadastre seu nome e e-mail para falar conosco.</p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Digite seu e-mail"
+              />
+              <button class="btn bg-company-yellow" type="submit">
+                Cadastrar
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
 
