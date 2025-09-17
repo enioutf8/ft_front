@@ -7,6 +7,11 @@ carousels.forEach((carousel) => {
   const prev = carousel.querySelector(".carousel-arrow.left");
   const next = carousel.querySelector(".carousel-arrow.right");
 
+  // VERIFICAÇÃO ADICIONADA: Se não houver itens, para a execução para este carrossel
+  if (items.length === 0) {
+    return;
+  }
+
   // Clona os itens para o efeito de loop infinito
   items.forEach((item) => {
     const clone = item.cloneNode(true);

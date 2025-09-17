@@ -83,6 +83,10 @@ ol {
   display: none !important;
 }
 
+.banner-ant-footer {
+  width: 100%;
+  height: 150px;
+}
 /* Mobile: até 600px */
 @media (max-width: 600px) {
   header {
@@ -1096,13 +1100,14 @@ ol {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px !important;
-    height: 370px !important;
+    width: 100px !important;
+    height: max-content !important;
     font-weight: 500 !important;
-
-    flex: 0 0 calc(80% - 10px); /* sempre 2 itens por vez */
-    scroll-snap-align: start; /* opcional: ajuda no snap */
+    /* Calcula a largura para 4 itens + o espaçamento */
+    flex: 0 0 calc(25% - 10px);
+    scroll-snap-align: start;
   }
+
   .environment-link {
     width: 100% !important;
     height: 260px;
@@ -1200,13 +1205,14 @@ ol {
 
   .carousel-track {
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    padding: 10px;
   }
 
   .brand {
     flex: 0 0 auto;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     background: #ffffff;
     display: flex;
     align-items: center;
@@ -1215,6 +1221,12 @@ ol {
     border-radius: 50%;
     padding: 5px;
     overflow: hidden;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+      rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+      rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+      rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+      rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+      rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
   }
   .brand img {
     width: 100%;
@@ -1334,6 +1346,10 @@ ol {
 
   .carousel-arrow.right {
     right: 5px;
+  }
+  .banner-ant-footer {
+    width: 100%;
+    height: 200px !important;
   }
 }
 
