@@ -1,7 +1,6 @@
 // Seleciona todos os carrosséis da página
 const carousels = document.querySelectorAll(".carousel-container");
 
-// Itera sobre cada carrossel encontrado
 carousels.forEach((carousel) => {
   const list = carousel.querySelector(".product-list");
   const items = carousel.querySelectorAll(".product-item");
@@ -51,7 +50,7 @@ carousels.forEach((carousel) => {
   });
 
   // Auto play
-  let autoScroll = setInterval(autoNext, 3000);
+  let autoScroll = setInterval(autoNext, 5000);
 
   // Pausa no hover
   list.addEventListener("mouseenter", () => clearInterval(autoScroll));
