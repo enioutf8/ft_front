@@ -30,8 +30,8 @@ body {
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 5%;
-  right: 8%;
+  bottom: 3%;
+  right: 2%;
   width: 70px;
   height: 70px;
 }
@@ -1273,6 +1273,67 @@ ol {
     flex-grow: 1;
     gap: 1rem;
     border: 1px solid black;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .product-list {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* esconde barra */
+  }
+
+  .product-item {
+    flex: 0 0 calc(20% - 10px); /* 5 itens por vez */
+    scroll-snap-align: start;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    user-select: none !important;
+  }
+  img {
+    user-select: none !important; /* impede seleção de texto e imagem */
+    -webkit-user-drag: none !important; /* Chrome/Safari */
+    -khtml-user-drag: none !important;
+    -moz-user-drag: none !important; /* Firefox */
+    -o-user-drag: none !important;
+    user-drag: none !important;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+
+  .carousel-arrow:hover {
+    opacity: 1;
+  }
+
+  .carousel-arrow.left {
+    left: 5px;
+  }
+
+  .carousel-arrow.right {
+    right: 5px;
   }
 }
 
