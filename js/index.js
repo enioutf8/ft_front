@@ -50,3 +50,52 @@ setInterval(() => {
 
   updateImage();
 }, 13000); // muda a cada 3 segundos
+
+
+// Desktop
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Renomeie os IDs para evitar conflito com outros componentes
+  const institutionalCarousel = document.getElementById("institutional-texts");
+  const texts = Array.from(
+    institutionalCarousel.querySelectorAll("p.institucional-description")
+  );
+  const imageElement = document.getElementById("institutional-carousel-image");
+
+  // Certifique-se de que a imagem e os textos existem
+  if (!institutionalCarousel || !imageElement || texts.length === 0) {
+    return;
+  }
+
+  let currentIndex = 0;
+  const intervalTime = 13000; // Tempo em milissegundos para a transição (13 segundos)
+
+  // Esconde todos os textos, exceto o primeiro
+  texts.forEach((text, index) => {
+    if (index !== 0) {
+      text.style.display = "none";
+    }
+  });
+
+  function showNextItem() {
+    // Esconde o texto atual
+    texts[currentIndex].style.display = "none";
+
+    // Atualiza para o próximo índice
+    currentIndex = (currentIndex + 1) % texts.length;
+    const nextText = texts[currentIndex];
+
+    // Muda a imagem com efeito de fade
+    imageElement.classList.add("fade-out");
+    setTimeout(() => {
+      imageElement.src = nextText.dataset.img;
+      imageElement.classList.remove("fade-out");
+    }, 100);
+
+    // Exibe o novo texto
+    nextText.style.display = "block";
+  }
+
+  // Inicia o carrossel automático
+  setInterval(showNextItem, intervalTime);
+});
