@@ -1,0 +1,63 @@
+/* Mobile: até 600px */
+@media (max-width: 600px) {
+  /* Adicione aqui os estilos para mobile, se necessário */
+}
+/* Tablet: 601px até 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Adicione aqui os estilos para tablet, se necessário */
+}
+
+/* Desktop: acima de 1024px */
+@media (min-width: 1025px) {
+  .section-about {
+    background-color: #ffffff !important;
+    width: 100% !important;
+    height: 650px !important;
+    position: relative;
+  }
+  .artice-about {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .part-a {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  .part-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+
+  /* Contêiner do carrossel: overflow-y: hidden é fundamental */
+  #primary-carrocel-imagens-aboult,
+  #secondary-carrocel-imagens-aboult,
+  #third-carrocel-imagens-aboult {
+    height: 100%;
+    width: 40%;
+    overflow-y: hidden;
+  }
+
+  /* Os itens internos do carrossel */
+  .card-image {
+    height: 300px !important;
+    border-radius: 10px !important;
+    background-color: rgb(235, 235, 235) !important;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+  }
+}
