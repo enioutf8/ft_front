@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     },
     {
-      threshold: 0.5, // quando 50% do elemento estiver visível
+      threshold: 0.01, // quando 50% do elemento estiver visível
     }
   );
 

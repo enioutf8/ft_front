@@ -112,6 +112,12 @@
       </form>
     </header>
     <!-- HEADER LG-->
+    <div
+      class="hidden-mobile"
+      style="cursor: pointer; width: 100%; height: 45px"
+    >
+      <img style="width: 100%" src="./imgs/banners/Prancheta 1bnh_01.png" />
+    </div>
     <header class="header-lg bg-white">
       <nav class="navbar navbar-expand-lg container">
         <div class="container-fluid">
@@ -250,11 +256,11 @@
         </div>
       </nav>
     </header>
-    <div class="line-overfooter bg-company-yellow hidden-mobile"></div>
+    <div class="line-overfooter bg-company-yellow hidden-lg"></div>
     <section aria-label="Carrossel de imagens">
       <div
         id="carouselExampleIndicators"
-        data-bs-interval="3000"
+        data-bs-interval="5000"
         data-bs-ride="carousel"
         class="carousel slide"
       >
@@ -280,15 +286,25 @@
             aria-label="Slide 3"
           ></button>
         </div>
+
         <div class="carousel-inner">
-          <div class="carousel-item bg-warning active">
-            <div class="carousel-item-custom">A</div>
+          <div class="carousel-item carousel-item-home bg-warning active">
+            <img
+              src="./imgs/banners/Prancheta 1bn_02.png"
+              class="d-block w-100 banner-img"
+            />
           </div>
-          <div class="carousel-item bg-dark">
-            <div class="carousel-item-custom">B</div>
+          <div class="carousel-item carousel-item-home bg-dark">
+            <img
+              src="./imgs/banners/Prancheta 1bn_02.png"
+              class="d-block w-100 banner-img"
+            />
           </div>
-          <div class="carousel-item bg-secondary">
-            <div class="carousel-item-custom">C</div>
+          <div class="carousel-item carousel-item-home bg-secondary">
+            <img
+              src="./imgs/banners/Prancheta 1bn_02.png"
+              class="d-block w-100 banner-img"
+            />
           </div>
         </div>
         <button
@@ -317,28 +333,50 @@
       aria-labelledby="categorias-fechaduras"
     >
       <div class="item-category">
-        <div class="icon-category">ICON</div>
+        <div class="icon-category">
+          <img src="./imgs/banners/icons_01.png" />
+        </div>
         <div class="legend color-company-dark">Com senha</div>
       </div>
       <div class="item-category">
-        <div class="icon-category">ICON</div>
+        <div class="icon-category">
+          <div class="icon-category">
+            <img src="./imgs/banners/icons_02.png" />
+          </div>
+        </div>
         <div class="legend color-company-dark">Com Biometria</div>
       </div>
       <div class="item-category">
-        <div class="icon-category">ICON</div>
+        <div class="icon-category">
+          <div class="icon-category">
+            <img src="./imgs/banners/icons_03.png" />
+          </div>
+        </div>
         <div class="legend color-company-dark">Com Câmera</div>
       </div>
       <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Com Sobrepor</div>
+        <div class="icon-category">
+          <div class="icon-category">
+            <img src="./imgs/banners/icons_04.png" />
+          </div>
+        </div>
+        <div class="legend color-company-dark">Com Chave de Emergência</div>
       </div>
       <div class="item-category">
-        <div class="icon-category">ICON</div>
+        <div class="icon-category">
+          <div class="icon-category">
+            <img src="./imgs/banners/icons_05.png" />
+          </div>
+        </div>
         <div class="legend color-company-dark">Tradicional</div>
       </div>
       <div class="item-category">
-        <div class="icon-category">ICON</div>
-        <div class="legend color-company-dark">Segredo</div>
+        <div class="icon-category">
+          <div class="icon-category">
+            <img src="./imgs/banners/icons_06.png" />
+          </div>
+        </div>
+        <div class="legend color-company-dark">Com Acesso Remoto</div>
       </div>
     </section>
     &nbsp;
@@ -397,7 +435,9 @@
                 reais e transformadores.
               </p>
             </div>
-            <a href="./pages/about.html" class="institucional-button bg-company-yellow"
+            <a
+              href="./pages/about.html"
+              class="institucional-button bg-company-yellow"
               >Saiba mais sobre nós</a
             >
           </div>
@@ -457,7 +497,7 @@
       class="featured-products container"
       aria-label="Produtos em Destaque"
     >
-      <h3 class="featured-products-title">Fechaduras em Destaque</h3>
+      <h3 class="featured-products-title ">Fechaduras em Destaque</h3>
       <br />
 
       <div class="carousel-container">
@@ -892,7 +932,8 @@
         </button>
       </div>
     </section>
-    <br /><br />
+        &nbsp;
+ 
     <section
       class="environment-carousel container"
       aria-label="Carrossel de imagens por ambiente"
@@ -971,7 +1012,7 @@
       class="featured-products container"
       aria-label="Produtos em Destaque"
     >
-      <h3 class="featured-products-title">Exclusivo e sofisticado</h3>
+      <h3 class="featured-products-title animar-ao-scroll fade-in">Exclusivo e sofisticado</h3>
       <br />
 
       <div class="carousel-container">
@@ -1406,7 +1447,7 @@
         </button>
       </div>
     </section>
-    &nbsp;
+         &nbsp;
     <div
       id="carrosselFooter"
       class="container carousel slide animar-ao-scroll fade-in"
@@ -1414,20 +1455,21 @@
       data-bs-interval="3000"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="d-block w-100 bg-primary banner-ant-footer"></div>
+        <div class="carousel-item carousel-item-footer active">
+            <img src="./imgs/banners/Prancheta 1banner_footer.png">
         </div>
-        <div class="carousel-item">
-          <div class="d-block w-100 bg-success banner-ant-footer"></div>
+        <div class="carousel-item carousel-item-footer">
+           <img src="./imgs/banners/Prancheta 1banner_footer.png">
         </div>
-        <div class="carousel-item">
-          <div class="d-block w-100 bg-danger banner-ant-footer"></div>
+        <div class="carousel-item carousel-item-footer">
+           <img src="./imgs/banners/Prancheta 1banner_footer.png">
         </div>
-        <div class="carousel-item">
-          <div class="d-block w-100 bg-warning banner-ant-footer"></div>
+        <div class="carousel-item carousel-item-footer">
+           <img src="./imgs/banners/Prancheta 1banner_footer.png">
         </div>
       </div>
     </div>
+    
     &nbsp;
     <section class="container">
       &nbsp;
