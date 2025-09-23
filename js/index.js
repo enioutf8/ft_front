@@ -51,7 +51,6 @@ setInterval(() => {
   updateImage();
 }, 13000); // muda a cada 3 segundos
 
-
 // Desktop
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -98,4 +97,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Inicia o carrossel automático
   setInterval(showNextItem, intervalTime);
+});
+
+// Obtém o botão
+const backToTopBtn = document.getElementById("back-to-top-btn");
+
+// Adiciona um evento de rolagem (scroll)
+window.addEventListener("scroll", () => {
+  // Se a posição da rolagem for maior que 300px, mostra o botão
+  if (window.scrollY > 3350) {
+    backToTopBtn.style.display = "block";
+  } else {
+    // Caso contrário, esconde o botão
+    backToTopBtn.style.display = "none";
+  }
+});
+
+// Adiciona um evento de clique para rolar suavemente para o topo
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
